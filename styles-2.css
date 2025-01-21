@@ -1,0 +1,158 @@
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+/* Navbar Styles */
+.vibrant-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+}
+
+.logo span {
+    color: #ffe28c;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffe28c;
+}
+
+/* Hero Section */
+.vibrant-hero {
+    text-align: center;
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #ffe28c;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffd452;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+.vibrant-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffe28c;
+}
+
+.vibrant-card {
+    background: linear-gradient(145deg, #ff7eb3, #ff758c);
+    padding: 20px;
+    border-radius: 10px;
+    color: #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vibrant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    background: #ff7eb3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ff758c;
+}
+
+/* Footer */
+.vibrant-footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
